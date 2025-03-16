@@ -22,33 +22,7 @@ class _HomepageState extends State<Homepage> {
             padding: EdgeInsets.all(16.0),
             child: Column(
               children: <Widget>[
-                Row(
-                  children: <Widget>[
-                    Container(
-                      color: Colors.yellow,
-                      height: 40.0,
-                      width: 40.0,
-                    ),
-                    Padding(
-                      padding: EdgeInsets.all(16.0),
-                    ),
-                    Expanded(
-                      child: Container(
-                        color: Colors.amber,
-                        height: 40.0,
-                        width: 40.0,
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.all(16.0),
-                    ),
-                    Container(
-                      color: Colors.brown,
-                      height: 40.0,
-                      width: 40.0,
-                    ),
-                  ],
-                ),
+                RowWidget(),
                 Padding(
                   padding: EdgeInsets.all(16.0),
                 ),
@@ -118,6 +92,43 @@ class _HomepageState extends State<Homepage> {
           ),
         ),
       ),
+    );
+  }
+}
+
+class RowWidget extends StatelessWidget {
+  const RowWidget({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: <Widget>[
+        Container(
+          color: Colors.yellow,
+          height: 40.0,
+          width: 40.0,
+        ),
+        Padding(
+          padding: EdgeInsets.all(16.0),
+        ),
+        Expanded(
+          child: Container(
+            color: Colors.amber,
+            height: 40.0,
+            width: 40.0,
+          ),
+        ),
+        Padding(
+          padding: EdgeInsets.all(16.0),
+        ),
+        Container(
+          color: Colors.brown,
+          height: 40.0,
+          width: 40.0,
+        ),
+      ],
     );
   }
 }
