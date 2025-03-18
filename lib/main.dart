@@ -1,3 +1,4 @@
+import 'package:belajarflutter/common.dart';
 import 'package:belajarflutter/homepage.dart';
 import 'package:flutter/material.dart';
 
@@ -11,10 +12,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: const Homepage(),
+      home: const Common(),
       theme: ThemeData(
-          useMaterial3: true,
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange)),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.lightGreen),
+        useMaterial3: true,
+      ),
+          
       title: 'Aku lagi belajar flutter',
     );
   }
