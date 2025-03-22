@@ -1,5 +1,5 @@
 import 'package:belajarflutter/common.dart';
-import 'package:belajarflutter/homepage.dart';
+import 'package:belajarflutter/login.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,10 +12,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: const Common(),
+      home: LoginPage(),
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.lightGreen),
-        useMaterial3: true,
+        // colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 136, 255, 0)),
+        // useMaterial3: true,
       ),
           
       title: 'Aku lagi belajar flutter',
